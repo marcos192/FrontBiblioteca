@@ -1,0 +1,128 @@
+<br>
+<form>
+    <div class="form-row">
+
+    <div class="col-md-1">
+        <label for="inputId" class="form-label">ID</label>
+        <input type="number" class="form-control" id="inputId" name="id" [(ngModel)]="model.id">
+    </div>
+
+        <div class="row g-3">
+            <div class="form-group col-md-5">
+                <label for="inputNome">Nome:</label>
+                <input type="nome" class="form-control" id="inputNome" name="Nome" [(ngModel)] ="model.nome">
+            </div>
+
+            <div class="col-md-2">
+                <label for="inputUf">Sexo:</label>
+                <select class="form-select" id="inputUf" aria-label="Default select example" name="uf" [(ngModel)] = "model.sexo">
+                    <option value=""></option>
+                    <option value="F">Feminino</option>   
+                    <option value="M">Masculino</option> 
+                </select> 
+            </div>
+
+            <div class="form-group col-md-2">
+                <label for="inputCpf">CPF:</label>
+                <input type="cpf" class="form-control" id="inputCpf" name="Cpf" [(ngModel)] ="model.cpf">
+            </div>
+
+            <div class="form-group col-md-8">
+                <label for="inputemail">Email:</label>
+                <input type="email" class="form-control" id="inputemail" name="Email" [(ngModel)] = "model.email">
+            </div>
+
+            <div class="col-md-2">
+                <label for="inputDataNascimento">Data Nascimento</label>
+                <input type="date" class="form-control" id="inputDocumento" name="dataNascimento" [(ngModel)] = "model.dataNascimento">
+            </div>
+        </div>
+
+        <div class="row g-3">
+            <div class="form-group col-md-4">
+                <label for="inputcidade">Cidade:</label>
+                <input type="cidade" class="form-control" id="inputcidade" name="cidade" [(ngModel)] = "model.endereco.cidade">
+            </div>
+
+            <div class="form-group col-md-2">
+                <label for="inputcep">CEP:</label>
+                <input type="cep" class="form-control" id="inputcep" name="Cep" [(ngModel)] = "model.endereco.cep">
+            </div>
+
+            <div class="form-group col-md-4">
+                <label for="inputendereco">Logradouro:</label>
+                <input type="logradouro" class="form-control" id="inputendereco" name="Logradouro" [(ngModel)] = "model.endereco.logradouro">
+              </div>
+
+              <div class="form-group col-md-6">
+                <label for="inputbairro">Bairro:</label>
+                <input type="bairro" class="form-control" id="inputbairro" name="Bairro" [(ngModel)] = "model.endereco.bairro">
+            </div>
+    
+            <div class="form-group col-md-2">
+                <label for="inputnumero">Numero:</label>
+                <input type="numero" class="form-control" id="inputnumero" name="Numero" [(ngModel)] = "model.endereco.numero">
+            </div>
+
+            <div class="col-md-2">
+                <label for="inputUf">UF:</label>
+                <select class="form-select" id="inputUf" aria-label="Default select example" name="uf" [(ngModel)] = "model.endereco.uf">
+                  <option value=""></option>
+                  <option value="AL">Alagoas</option>
+                  <option value="AP">Amapá</option>
+                  <option value="AM">Amazonas</option>
+                  <option value="BA">Bahia</option>
+                  <option value="CE">Ceará</option>
+                  <option value="DF">Distrito Federal</option>
+                  <option value="ES">Espírito Santo</option>
+                  <option value="GO">Goiás</option>
+                  <option value="MA">Maranhão</option>
+                  <option value="MT">Mato Grosso</option>
+                  <option value="MS">Mato Grosso do Sul</option>
+                  <option value="MG">Minas Gerais</option>
+                  <option value="PA">Pará</option>
+                  <option value="PB">Paraíba</option>
+                  <option value="PR">Paraná</option>
+                  <option value="PE">Pernambuco</option>
+                  <option value="PI">Piauí</option>
+                  <option value="RJ">Rio de Janeiro</option>
+                  <option value="RN">Rio Grande do Norte</option>
+                  <option value="RS">Rio Grande do Sul</option>
+                  <option value="RO">Rondônia</option>
+                  <option value="RR">Roraima</option>
+                  <option value="SC">Santa Catarina</option>
+                  <option value="SP">São Paulo</option>
+                  <option value="SE">Sergipe</option>
+                  <option value="TO">Tocantins</option>
+                </select>
+        
+              </div>
+            
+        </div>
+
+    </div>
+     
+    <br>
+
+    <div class="form-group">
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" id="gridCheck">
+        <label class="form-check-label" for="gridCheck">
+          Clique no Fleg
+        </label>
+      </div>
+    </div>
+
+    <br>
+
+    <div class="row g-3">
+        <div class="form-group col-md-1">
+            <button type="submit" class="btn btn-dark">Voltar</button>
+        </div>
+    
+        <div class="form-group col-md-1">
+            <button type="submit" class="btn btn-dark">Save</button>
+        </div>
+    </div>
+
+  </form>
